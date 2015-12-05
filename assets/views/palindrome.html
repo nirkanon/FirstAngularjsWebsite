@@ -1,0 +1,53 @@
+<div class="container-full">
+    <div class="col-md-6 col-md-offset-3" style="margin-top: 30px">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Simple Palindrome Checker</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="input">Enter string or URL</label>
+                        <input type="text" class="form-control" ng-model="paliCtrl.inputValue" id="input"
+                               placeholder="Input">
+                        <button type="button" class="btn btn-default" ng-click="paliCtrl.go()">Click</button>
+                    </div>
+                </form>
+                <div class="alert alert-success" role="alert" id="palindromeMessage"
+                     style="margin-top: 30px;display: none">
+                    <div id="palindromeMessageText" style="font-weight: bold"></div>
+                </div>
+                <div id="palindromesListDiv" ng-show="paliCtrl.result.length > 0" style="margin-top: 30px;">
+                    <div class="alert alert-success col-md-8" role="alert">
+                        <h3>Palindromes found in the list:</h3>
+                        <ul class="list-group" id="palindromesList">
+                            <li class="list-group-item" ng-repeat="item in paliCtrl.result">{{item}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-row-1">
+                        <label for="foundStats"><h4 class="div-title">Palindromes Precentage:</h4></label>
+
+                        <div class="progress">
+                            <div id="foundStats" class="progress-bar progress-bar-success" role="progressbar"
+                                 aria-valuenow="{{paliCtrl.foundStats}"
+                                 aria-valuemin="0" aria-valuemax="100"
+                                 ng-style="{width : ( paliCtrl.foundStats + '%' ) }">{{paliCtrl.foundStats}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-row-2">
+                        <label for="notFoundStats"><h4 class="div-title">Not Palindromes Precentage:</h4></label>
+
+                        <div class="progress">
+                            <div id="notFoundStats" class="progress-bar progress-bar-danger" role="progressbar"
+                                 aria-valuenow="{{paliCtrl.notFoundStats}}"
+                                 aria-valuemin="0" aria-valuemax="100"
+                                 ng-style="{width : ( paliCtrl.notFoundStats + '%' ) }">{{paliCtrl.notFoundStats}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,300);
+
+
+.wrapper {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -ms-content-zooming: none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    font-family: 'Scout', arial, sans-serif;
+}
+
+
+/*body {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*/!*background: #E5E5E5;*!/*/
+    /*font-weight: 300;*/
+    /*/!*color: #404040;*!/*/
+    /*background-image: url(../img/background.jpg);*/
+    /*/!*font-family: "RobotoDraft", Helvetica, Arial, sans-serif;*!/*/
+    /*letter-spacing: .1px;*/
+    /*-webkit-font-smoothing: antialiased;*/
+    /*text-rendering: optimizeLegibility;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size:100%;*/
+
+/*}*/
+
+
+
+.container {
+    /*margin: 0;*/
+    /*/!*padding: 0;*!/*/
+    /*width: 100%;*/
+    /*max-width: 100%;*/
+}
+
+.row .full-width {
+    max-width: 100%
+}
+
+.shadow {
+    box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+    height: 500px;
+    padding-top: 50px;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+}
+
+md-tabs {
+    background: transparent;
+    border: 1px solid #e1e1e1; }
+
+.toolbar {
+    height: 50px;
+    color: gray;
+}
+
+.container-box {
+    /* Positioning & Display */
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 320px;
+    position: relative;
+    /* Color */
+    background: #fff url("../img/container-bg.png");
+    -webkit-box-shadow: 0px 0px 20px rgba(3, 3, 3, 0.3);
+    -moz-box-shadow:    0px 0px 20px rgba(3, 3, 3, 0.3);
+    box-shadow:         0px 0px 20px rgba(3, 3, 3, 0.3);
+}
+
+
+.animate.ng-enter, .animate.ng-leave {
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+}
+
+.animate.ng-enter.ng-enter-active, .animate.ng-leave {
+    left: 0;
+}
+.animate.ng-leave.ng-leave-active, .animate.ng-enter {
+    transition: 1s linear all;
+    opacity: 1;
+}
+
+.animate-repeat {
+    line-height:40px;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+    opacity:0;
+    max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+    opacity:1;
+    max-height:40px;
+}
+
+.boxstyle {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    top: 20px;
+    -webkit-box-shadow: 0 2px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,0.2);
+}
